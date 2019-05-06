@@ -21,15 +21,12 @@ body {
 }
 
 
-/* Header */
+/* Header 
 
 .main-menu-box {
-  padding-top: 20px;
+  padding-top: 13px;
 }
 
-.main-menu-box .logo-pic img {
-  width: 170px;
-}
 
 .content-box {
   display: flex;
@@ -38,7 +35,7 @@ body {
 }
 
 header {
-  height: 80px;
+  height: 57px;
   position: fixed;
   padding: 0px 0px 20px 0px;
   left: 0;
@@ -86,12 +83,17 @@ header {
 
 
 .layout {
-  background: linear-gradient(45deg, rgb(15, 32, 39, 1), rgba(240, 105, 217, 0.5)), url('/img/city.jpg') no-repeat;
+background: linear-gradient(45deg, rgb(15, 32, 39, 1), rgba(255, 193, 245, 0.5)), url('/img/interior.jpg') no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
+  max-width: 100%;
+  text-align: center;
+  padding:300px; 
+  height: auto;
 }
 
-.layout-content {
+/*.layout-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,10 +138,15 @@ header {
 .footer-box p{
   padding: 5px;
 }
+*/
 
 
 /*content*/
 
+.content-index{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .content-body{
   display: flex;
     padding: 50px;
@@ -231,4 +238,87 @@ header {
   display: flex;
     margin-bottom: 100px;
     margin-top: 100px;
+}
+
+.img-fluid{
+  margin-bottom: 100px;
+}
+
+/*footer*/
+#footer {
+  background: #f7f7f7;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#footer .socials-media {
+  width: 100%;
+}
+
+#footer .socials-media ul {
+  display: inline-block;
+  float: none;
+  margin: 0 0 20px 0;
+}
+
+#footer .socials-media ul li {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#footer .socials-media ul li a {
+  font-size: 24px;
+  color: #999;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  background: transparent;
+  text-transform: uppercase;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#footer .socials-media ul li a:hover {
+  color: #270d9c;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#footer p {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.jumbotron {
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
 }
